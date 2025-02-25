@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C369FB"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C369FB"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/titleSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Настройки"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Темная/светлая версия -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Темная/светлая версия"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switchTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Уведомления -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Уведомления"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switchNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Редактировать -->
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Редактировать"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/black" />
+
+        <!-- Конфигурация -->
+        <Button
+            android:id="@+id/buttonConfiguration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Конфигурация"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/black" />
+
+        <!-- Язык -->
+        <Button
+            android:id="@+id/buttonLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Язык"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/black" />
+
+        <!-- Помощь -->
+        <Button
+            android:id="@+id/buttonHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Помощь"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/black" />
+    </LinearLayout>
+</ScrollView>

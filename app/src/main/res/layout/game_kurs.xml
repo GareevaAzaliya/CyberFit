@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C369FB"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C369FB"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/titleSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Counter-Strike 2"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Картинка -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="332dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/cs" />
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Две команды соревнуются за выполнение различных задач в зависимости от выбранного режима игры. Игроки делятся на контртеррористов и террористов. Каждый игровой режим разделён на несколько раундов, а в перерывах между ними игрок может приобрести различное оружие и снаряжение."
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Шутер от первого лица"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Кнопка -->
+        <Button
+            android:id="@+id/actionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Перейти к курсам"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="95dp"/>
+    </LinearLayout>
+</ScrollView>
