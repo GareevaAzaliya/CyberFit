@@ -3,119 +3,138 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#C56AFD"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C369FB"
     tools:context=".MainActivity">
 
-    <!-- ImageView -->
+    <!-- Логотип -->
+
+    <!-- Текст "CYBER" -->
+
+    <!-- Текст "FIT" -->
+
+    <!-- TextInputLayout для логина -->
+
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/Logotip"
         android:layout_width="205dp"
         android:layout_height="157dp"
-        app:srcCompat="@drawable/game"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        android:layout_marginTop="25dp" />
+        app:srcCompat="@drawable/game" />
 
-    <!-- TextView "CYBER" -->
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="112dp"
-        android:layout_height="74dp"
-        android:fontFamily="sans-serif-medium"
-        android:lineSpacingExtra="12sp"
-        android:text="CYBER"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/imageView3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
-        android:layout_marginTop="20dp" />
-
-    <!-- EditText "Логин" -->
-    <EditText
-        android:id="@+id/loginEditText"
-        android:layout_width="175dp"
-        android:layout_height="43dp"
-        android:background="@android:color/transparent"
-        android:backgroundTint="#808B00B6"
-        android:gravity="center"
-        android:hint="Логин"
-        android:padding="12dp"
-        android:textColor="#070606"
-        android:textColorHint="#070606"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        android:layout_marginTop="40dp" />
-
-    <!-- EditText "Пароль" -->
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="176dp"
-        android:layout_height="45dp"
-        android:background="@android:color/transparent"
-        android:backgroundTint="#8B00B6"
-        android:gravity="center"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
         android:hint="Пароль"
-        android:inputType="textPassword"
-        android:padding="12dp"
-        android:textColor="#070606"
-        android:textColorHint="#070606"
-        app:layout_constraintTop_toBottomOf="@id/loginEditText"
-        app:layout_constraintStart_toStartOf="parent"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxStrokeColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        android:layout_marginTop="10dp" />
-
-    <!-- Button "Войти" -->
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="193dp"
-        android:layout_height="57dp"
-        android:backgroundTint="#8B00B6"
-        android:text="Войти"
-        android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/passwordEditText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintTop_toBottomOf="@id/loginLayout">
 
-    <!-- Button "Зарегистрироваться" -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textAlignment="center" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/RegistrationButton"
-        android:layout_width="196dp"
-        android:layout_height="62dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#8B00B6"
-        android:text="Зарегестрироваться"
-        android:textColor="#F8F5F5"
-        app:layout_constraintTop_toBottomOf="@id/loginButton"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Зарегистрироваться"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InerButton" />
 
-    <!-- TextView "FIT" -->
+    <Button
+        android:id="@+id/InerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#8B00B6"
+        android:text="Войти"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordLayout" />
+
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="52dp"
-        android:layout_height="48dp"
+        android:id="@+id/FitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="124dp"
         android:fontFamily="sans-serif-medium"
-        android:lineSpacingExtra="12sp"
         android:text="FIT"
         android:textColor="#FBF9FB"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/imageView3"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.65"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Logotip" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Логин"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxStrokeColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FitTextView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textAlignment="center" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/CyberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="CYBER"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/loginLayout"
+        app:layout_constraintEnd_toStartOf="@+id/FitTextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Поле ввода пароля -->
+
+    <!-- Кнопка "Войти" -->
+
+    <!-- Кнопка "Зарегистрироваться" -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>
