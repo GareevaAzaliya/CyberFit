@@ -3,13 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C369FB"
+    android:background="@drawable/fon"
     android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#C369FB"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="16dp">
@@ -27,12 +26,11 @@
 
         <!-- Поля для ввода -->
         <EditText
-            android:id="@+id/Name"
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="8dp"
             android:background="@android:color/white"
-            android:contentDescription="Введите имя и фамилию"
             android:hint="Имя, фамилия"
             android:padding="12dp" />
 
@@ -42,28 +40,27 @@
             android:layout_height="48dp"
             android:layout_marginBottom="8dp"
             android:background="@android:color/white"
-            android:contentDescription="Введите дату рождения"
             android:hint="Дата рождения"
             android:padding="12dp" />
 
         <!-- Радио-кнопки для выбора уровня -->
         <RadioGroup
-            android:id="@+id/StatusGamer"
+            android:id="@+id/statusGamer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/Profi"
+                android:id="@+id/profi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="Профи "
+                android:text="Профи"
                 android:textColor="@android:color/black" />
 
             <RadioButton
-                android:id="@+id/Novichok"
+                android:id="@+id/novichok"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Новичок"
@@ -71,41 +68,37 @@
         </RadioGroup>
 
         <EditText
-            android:id="@+id/Nikneym"
+            android:id="@+id/nickname"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="8dp"
             android:background="@android:color/white"
-            android:contentDescription="Введите никнейм"
             android:hint="Никнейм"
             android:padding="12dp" />
 
         <EditText
-            android:id="@+id/Phone"
+            android:id="@+id/phone"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="8dp"
             android:background="@android:color/white"
-            android:contentDescription="Введите номер телефона"
             android:hint="+7 (___) ___-__-__"
             android:inputType="phone"
             android:padding="12dp" />
 
         <EditText
-            android:id="@+id/E-mail"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="8dp"
             android:background="@android:color/white"
-            android:contentDescription="Введите адрес электронной почты"
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:padding="12dp" />
 
         <!-- Spinner для выбора игр -->
-
         <TextView
-            android:id="@+id/ViborGameTextView"
+            android:id="@+id/viborGameTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
@@ -117,40 +110,35 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="8dp"
-            android:contentDescription="Выберите игру"
             android:entries="@array/spinner_array"
             android:padding="8dp" />
 
         <EditText
-            android:id="@+id/Password"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="8dp"
             android:background="@android:color/white"
-            android:contentDescription="Введите пароль"
             android:hint="Пароль"
             android:inputType="textPassword"
             android:padding="12dp" />
 
         <EditText
-            android:id="@+id/PovtorPassword"
+            android:id="@+id/repeatPassword"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="16dp"
             android:background="@android:color/white"
-            android:contentDescription="Повторите пароль"
             android:hint="Повторить пароль"
             android:inputType="textPassword"
             android:padding="12dp" />
 
         <!-- Кнопка регистрации -->
         <Button
-            android:id="@+id/zaregestrirovat"
+            android:id="@+id/registerButton"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:backgroundTint="#8B00B6"
-            android:contentDescription="Нажмите для регистрации"
-            android:padding="12dp"
+            android:backgroundTint="#62306A"
             android:text="Зарегистрироваться"
             android:textColor="@android:color/white" />
 

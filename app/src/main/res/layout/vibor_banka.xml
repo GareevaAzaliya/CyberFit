@@ -13,9 +13,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Логотип СБП -->
-
-        <!-- Текст "Выберите банк для подтверждения оплаты" -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

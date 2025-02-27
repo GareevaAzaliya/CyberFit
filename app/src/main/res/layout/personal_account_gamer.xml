@@ -10,13 +10,13 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#C369FB"
+        android:background="@drawable/fon"
         android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#C369FB"
+
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="16dp">
