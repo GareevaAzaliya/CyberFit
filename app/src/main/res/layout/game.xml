@@ -15,7 +15,7 @@
 
         <!-- Заголовок -->
         <TextView
-            android:id="@+id/titleSettings"
+            android:id="@+id/titleGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -48,12 +48,13 @@
                     android:background="@android:color/darker_gray" />
 
                 <Button
+                    android:id="@+id/cs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:background="@android:color/black"
                     android:text="Counter-Strike 2"
-                    android:textColor="@android:color/white"
-                    android:background="@android:color/black" />
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <!-- Вторая картинка и кнопка -->
@@ -72,12 +73,13 @@
                     android:background="@android:color/darker_gray" />
 
                 <Button
+                    android:id="@+id/dota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:background="@android:color/black"
                     android:text="Dota 2"
-                    android:textColor="@android:color/white"
-                    android:background="@android:color/black" />
+                    android:textColor="@android:color/white" />
             </LinearLayout>
         </LinearLayout>
 
@@ -105,12 +107,13 @@
                     android:background="@android:color/darker_gray" />
 
                 <Button
+                    android:id="@+id/apex"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:background="@android:color/black"
                     android:text="Apex Legends"
-                    android:textColor="@android:color/white"
-                    android:background="@android:color/black" />
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <!-- Четвертая картинка и кнопка -->
@@ -129,12 +132,13 @@
                     android:background="@android:color/darker_gray" />
 
                 <Button
+                    android:id="@+id/war"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:background="@android:color/black"
                     android:text="War Thunder"
-                    android:textColor="@android:color/white"
-                    android:background="@android:color/black" />
+                    android:textColor="@android:color/white" />
             </LinearLayout>
         </LinearLayout>
 
@@ -154,12 +158,13 @@
                 android:background="@android:color/darker_gray" />
 
             <Button
+                android:id="@+id/pubg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:background="@android:color/black"
                 android:text="PUBG: BATTLEGROUNDS"
-                android:textColor="@android:color/white"
-                android:background="@android:color/black" />
+                android:textColor="@android:color/white" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

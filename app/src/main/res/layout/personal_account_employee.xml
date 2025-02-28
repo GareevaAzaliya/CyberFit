@@ -16,7 +16,7 @@
 
         <!-- Заголовок -->
         <TextView
-            android:id="@+id/titleRegistration"
+            android:id="@+id/titleAccountEmployee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -85,7 +85,7 @@
             android:textSize="25sp" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/schedule"
             android:layout_width="365dp"
             android:layout_height="277dp"
             android:layout_marginTop="8dp"
@@ -95,23 +95,21 @@
             android:src="@drawable/calendar" />
 
         <Button
-            android:id="@+id/buttonShowPlayers"
+            android:id="@+id/list_players"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Cписок игроков"
-            android:textSize="18sp"
-            android:backgroundTint="@color/black"
-            android:textColor="@android:color/white" />
+            android:text="Список игроков"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/buttonSettings"
+            android:id="@+id/helpis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Настройки"
-            android:textSize="18sp"
-            android:backgroundTint="@color/black"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
     </LinearLayout>
 </ScrollView>
