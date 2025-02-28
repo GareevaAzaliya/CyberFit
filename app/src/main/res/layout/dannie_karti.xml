@@ -7,6 +7,7 @@
     android:padding="16dp">
 
     <LinearLayout
+        android:id="@+id/dannie_card_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -25,6 +26,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/text_nom_karti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -40,6 +42,7 @@
             android:maxLines="1" />
 
         <TextView
+            android:id="@+id/text_srok_karti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

@@ -41,6 +41,34 @@
                 android:textColor="@android:color/white" />
         </LinearLayout>
 
+        <!-- Поле для поиска курса -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_layout_background"
+            android:padding="5dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/searchCourse"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Поиск курса"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Поиск"
+                android:src="@drawable/ic_search" />
+        </LinearLayout>
+
         <!-- Карточка курса 1 -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"

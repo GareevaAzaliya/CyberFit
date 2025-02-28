@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fon">
+    <!--tools:context=".ChatActivity"   отвечает за отображение и функциональность чата-->
+
+    <!-- Заголовок чата -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#664FA3"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Чат"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView для отображения сообщений -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Панель ввода сообщения -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Поле для ввода сообщения -->
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="294dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:hint="Введите сообщение..."
+            android:inputType="text"
+            android:maxLines="3"
+            android:padding="8dp" />
+
+        <!-- Кнопка отправки сообщения -->
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_background"
+            android:padding="3dp"
+            android:text="Отправить"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
