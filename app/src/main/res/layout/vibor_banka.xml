@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/akbars"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fon"
@@ -28,11 +28,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
 
             <!-- Альфа-Банк -->
             <LinearLayout
+                android:id="@+id/alfa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -64,6 +65,7 @@
 
             <!-- Сбербанк -->
             <LinearLayout
+                android:id="@+id/sber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -78,7 +80,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
-                    android:contentDescription="Сбербанк"
+                    android:contentDescription="Сбер"
                     android:src="@drawable/ic_sber" />
 
                 <TextView
@@ -86,13 +88,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="12dp"
-                    android:text="Сбербанк"
+                    android:text="Сбер"
                     android:textColor="#000000"
                     android:textSize="18sp" />
             </LinearLayout>
 
-            <!-- Райффайзен -->
+            <!-- Ак Барс Банк -->
             <LinearLayout
+                android:id="@+id/akbars_bank"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -107,7 +110,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
-                    android:contentDescription="Райффайзен"
+                    android:contentDescription="Ак Барс Банк"
                     android:src="@drawable/ic_akbars" />
 
                 <TextView
@@ -122,6 +125,7 @@
 
             <!-- Тинькофф -->
             <LinearLayout
+                android:id="@+id/t_bank"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#F7F2F2"
@@ -135,7 +139,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
-                    android:contentDescription="Тинькофф"
+                    android:contentDescription="Т-Банк"
                     android:src="@drawable/ic_tbank" />
 
                 <TextView
@@ -143,7 +147,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="12dp"
-                    android:text="Тинькофф"
+                    android:text="Т-Банк"
                     android:textColor="#000000"
                     android:textSize="18sp" />
             </LinearLayout>
