@@ -69,6 +69,65 @@
                 android:layout_height="65dp" />
         </LinearLayout>
 
+        <!-- Язык -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выберите язык:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Русский -->
+                <TextView
+                    android:id="@+id/languageRussian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Русский"
+                    android:padding="12dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:gravity="center" />
+
+                <!-- English -->
+                <TextView
+                    android:id="@+id/languageEnglish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:padding="12dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:gravity="center" />
+
+                <!-- Китайский -->
+                <TextView
+                    android:id="@+id/languageChinese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中文"
+                    android:padding="12dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
         <!-- Редактировать -->
         <Button
             android:id="@+id/edit"
@@ -76,16 +135,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Редактировать"
-            android:textColor="@android:color/white"
-            android:textSize="18sp" />
-
-        <!-- Язык -->
-        <Button
-            android:id="@+id/vibor_language"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Язык"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 

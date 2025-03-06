@@ -16,166 +16,175 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:gravity="center_horizontal"
             android:orientation="vertical"
+            android:gravity="center_horizontal"
             android:padding="16dp">
 
-        <!-- Заголовок -->
-        <TextView
-            android:id="@+id/titleAccountGamer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="Никнейм"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="26sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
-
-            <!-- Иконка -->
-            <ImageView
-                android:layout_width="151dp"
-                android:layout_height="136dp"
-                android:contentDescription="Иконка"
-                android:src="@drawable/account"
-                android:layout_marginEnd="16dp" />
-
-            <!-- Статусы пользователя -->
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <!-- Заголовок -->
+            <TextView
+                android:id="@+id/titleAccountGamer"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginBottom="16dp"
+                android:text="Никнейм"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center" />
 
+            <!-- Контейнер для аватара и статусов -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <!-- Иконка -->
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="Иконка"
+                    android:src="@drawable/account"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop" />
+
+                <!-- Статусы пользователя -->
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="start">
 
-                    <View
-                        android:id="@+id/statusGame"
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@android:color/holo_green_light"
-                        android:layout_marginEnd="8dp" />
-
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="В игре"
-                        android:textColor="@color/black"/>
-                </LinearLayout>
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                        <View
+                            android:id="@+id/statusGame"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:background="@android:color/holo_green_light"
+                            android:layout_marginEnd="8dp" />
 
-                    <View
-                        android:id="@+id/statusTraining"
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@android:color/holo_red_light"
-                        android:layout_marginEnd="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="В игре"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="На тренировке"
-                        android:textColor="@color/black"/>
-                </LinearLayout>
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                        <View
+                            android:id="@+id/statusTraining"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:background="@android:color/holo_red_light"
+                            android:layout_marginEnd="8dp" />
 
-                    <View
-                        android:id="@+id/statusOffline"
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@android:color/holo_red_light"
-                        android:layout_marginEnd="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="На тренировке"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Оффлайн"
-                        android:textColor="@color/black"/>
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <View
+                            android:id="@+id/statusOffline"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:background="@android:color/holo_red_light"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Оффлайн"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
+            <!-- Уровень и рейтинг -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Level15"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="#345 в рейтинге CyberFit"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Достижения"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="359dp"
+                android:layout_height="85dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dost" />
+
+            <ImageButton
+                android:id="@+id/statisticaButton"
+                android:layout_width="wrap_content"
+                android:layout_height="158dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/statistica"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Кнопка статистики"
+                android:padding="0dp"
+                android:cropToPadding="false"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/date_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="18567             2350                   4"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/date_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
         </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Level15"
-            android:textSize="25sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="#345 в рейтинге CyberFit"
-            android:textSize="25sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Достижения"
-            android:textSize="25sp"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="359dp"
-            android:layout_height="85dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/dost" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="158dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/statistica" />
-
-        <TextView
-            android:id="@+id/date_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="18567             2350                   4"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/date_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="9"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold"/>
-    </LinearLayout>
-</ScrollView>
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="@android:color/white"
-        app:menu="@menu/menu_gamer" />
+    </ScrollView>
 </androidx.drawerlayout.widget.DrawerLayout>
